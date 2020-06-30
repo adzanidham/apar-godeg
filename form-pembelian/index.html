@@ -19,23 +19,84 @@
     <div class="container">
       <div class="client-form">
         <form action="">
-          <label>
-            Tanggal <input type="date" name"tanggal" id="form-tanggal">
-          </label>
-          <label>
-            Faktur <input type="text" name"faktur" id="form-faktur">
-          </label>
-          <label>
-            Client <input type="text" name"client" id="form-client">
-          </label>
-          <label>
-            Alamat <input type="text" name"alamat-client"
-            id="form-alamat-client">
-          </label>
-          <label>
-            Kota <input type="text" name"kota-client" id="form-kota-client">
-          </label>
+          <div class="form-kiri">
+            <label>
+              Faktur <input type="text" name"faktur" id="form-faktur">
+            </label>
+            <label>
+              Client <input type="text" name"client" id="form-client">
+              <button>+</button>
+            </label>
+            <label>
+              Alamat <input type="text" name"alamat-client"
+              id="form-alamat-client">
+            </label>
+            <label>
+              Kota <input type="text" name"kota-client" id="form-kota-client">
+            </label>
+          </div>
+          <div class="form-kanan">
+            <label>
+              Tanggal <input type="date" name"tanggal" id="form-tanggal">
+            </label>
+          </div>
+          <div class="form-bawah">
+            <label>
+              Nama Barang <input type="text" name"nm_barang"
+              id="form-nm_barang">
+            </label>
+            <label>
+              Qty <input type="number" name"jml_barang" id="form-jml_barang">
+            </label>
+            <label>
+              Harga Satuan <input type="text" name"hrg_satuan"
+              id="form-hrg_satuan">
+            </label>
+            <button>+</button>
+          </div>
         </form>
+      </div>
+
+      <div class="tabel-barang">
+        <table border="1">
+          <tr>
+            <th>Nama Barang</th>
+            <th>Qty</th>
+            <th>Harga Satuan</th>
+            <th>Jumlah</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>edit | hapus</td>
+          </tr>
+          <tr>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>edit | hapus</td>
+          </tr>
+          <tr>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>edit | hapus</td>
+          </tr>
+          <tr>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>edit | hapus</td>
+          </tr>
+        </table>
+        <button>Submit</button>
+        <button>Reset</button>
       </div>
     </div>
 
