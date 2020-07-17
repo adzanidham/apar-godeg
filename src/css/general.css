@@ -12,7 +12,7 @@ img {
   margin: 0 auto;
   width: 95%;
   max-width: 900px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .col {

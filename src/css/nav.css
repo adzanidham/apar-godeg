@@ -18,12 +18,12 @@ header .container {
 
 .header-left {
   width: 20%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .header-right {
   width: 79%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 nav ul {
@@ -69,5 +69,15 @@ nav a:active {
     background-size: contain;
     background-repeat: no-repeat;
     /* border: 1px solid green; */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header-left {
+    width: 55%;
+  }
+
+  .header-right {
+    width: 30%;
   }
 }
