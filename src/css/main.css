@@ -1,0 +1,33 @@
+.main h1 {
+  text-align: center;
+  color: rgb(66, 66, 168);
+}
+
+.client-form {
+  /* padding: 10px; */
+  border: 1px solid black;
+}
+
+form,
+form .col {
+  flex-direction: column;
+}
+
+.form-kanan {
+  order: 1;
+}
+
+.form-kiri {
+  order: 2;
+}
+.form-bawah {
+  order: 3;
+}
+
+.formulir {
+  margin-top: 10px;
+}
+
+.formulir {
+  border: 1px solid black;
+}

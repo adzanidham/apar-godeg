@@ -4,34 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Data Pembeli | Sistem Informasi Penjualan APAR</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../src/css/general.css" />
+    <link rel="stylesheet" href="../src/css/typograf.css" />
+    <link rel="stylesheet" href="../src/css/nav.css" />
+    <link rel="stylesheet" href="../src/css/main.css" />
   </head>
+
   <body>
     <header>
       <div class="container col">
-        <div class="header-right col">
+        <div class="header-left col">
           <div class="logo logo-img">
-            <img src="../img/logo-tr.png" alt="" />
-          </div>
-          <div class="logo logo-txt">
-            <h1>CV. BINA JAYA TEKNIKA</h1>
-            <p>Fire Extinguisher Service Fire Alarm & Hydrant System</p>
+            <!-- <img src="../src/img/logo-full.jpg" alt="" /> -->
           </div>
         </div>
-        <nav>
-          <ul class="col">
-            <li><a href="#">Form Pembelian</a></li>
-            <li><a href="#">Data Pembelian</a></li>
-          </ul>
-        </nav>
+        <div class="header-right">
+          <nav>
+            <ul class="col">
+              <li><a href="#">Form Pembelian</a></li>
+              <li><a href="#">Data Pembelian</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
     <div class="container main">
       <h1>FORM DATA PEMBELIAN</h1>
       <div class="client-form">
-        <form action="">
-          <div class="form-kiri">
+        <form action="" class="col">
+          <div class="formulir form-kiri col">
             <label>
               Faktur <input type="text" name"faktur" id="form-faktur">
             </label>
@@ -47,12 +49,12 @@
               Kota <input type="text" name"kota-client" id="form-kota-client">
             </label>
           </div>
-          <div class="form-kanan">
+          <div class="formulir form-kanan col">
             <label>
               Tanggal <input type="date" name"tanggal" id="form-tanggal">
             </label>
           </div>
-          <div class="form-bawah">
+          <div class="formulir form-bawah col">
             <label>
               Nama Barang <input type="text" name"nm_barang"
               id="form-nm_barang">
