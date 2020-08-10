@@ -6,11 +6,11 @@ label p {
 
 /* LAYOUT */
 .input-form {
-  padding: 20px 100px;
+  padding: 20px 50px;
   margin-top: 10px;
   background: rgba(187, 187, 224, 0.6);
   border-radius: 10px;
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
 /* .form-client {
@@ -43,10 +43,14 @@ form input:focus {
 
 #form-client {
   width: 90%;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
 }
 
 .btn-add-client {
   width: 10%;
+  border-radius: 0 5px 5px 0;
+  border-left: none;
 }
 
 #form-tanggal {

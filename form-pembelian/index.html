@@ -24,9 +24,10 @@
       </div>
     </header>
 
-    <div class="container main">
-      <h1>FORM DATA PEMBELIAN</h1>
+    <div class="container main col">
+      <!--  -->
       <div class="input-form">
+        <h1>FORM DATA PEMBELIAN</h1>
         <form>
           <div class="form-client">
             <div class="form-client-top col">
@@ -45,7 +46,7 @@
                 <input type="text" name="client" id="form-client" /><button
                   class="btn-add-client"
                 >
-                  +
+                  add client
                 </button>
               </label>
               <label>
@@ -54,11 +55,17 @@
                   type="text"
                   name="alamat-client"
                   id="form-alamat-client"
+                  disabled
                 />
               </label>
               <label>
                 <p>Kota</p>
-                <input type="text" name="kota-client" id="form-kota-client" />
+                <input
+                  type="text"
+                  name="kota-client"
+                  id="form-kota-client"
+                  disabled
+                />
               </label>
             </div>
           </div>
