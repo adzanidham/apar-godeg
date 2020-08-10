@@ -31,9 +31,9 @@ nav ul {
   justify-content: space-around;
 }
 
-nav li {
-  /* border: 1px solid blue; */
-}
+/* nav li {
+  border: 1px solid blue;
+} */
 
 nav a {
   cursor: pointer;

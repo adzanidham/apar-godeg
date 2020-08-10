@@ -4,7 +4,8 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-header {
+header,
+.main {
   font-size: 0.8rem;
 }
 
@@ -14,5 +15,5 @@ nav a {
 }
 
 .main h1 {
-  font-size: 1.3rem;
+  font-size: 1.3em;
 }

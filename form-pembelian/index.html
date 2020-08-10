@@ -29,42 +29,57 @@
 
     <div class="container main">
       <h1>FORM DATA PEMBELIAN</h1>
-      <div class="client-form">
-        <form action="" class="col">
-          <div class="formulir form-kiri col">
-            <label>
-              Faktur <input type="text" name"faktur" id="form-faktur">
-            </label>
-            <label>
-              Client <input type="text" name"client" id="form-client">
-              <button>+</button>
-            </label>
-            <label>
-              Alamat <input type="text" name"alamat-client"
-              id="form-alamat-client">
-            </label>
-            <label>
-              Kota <input type="text" name"kota-client" id="form-kota-client">
-            </label>
+      <div class="input-form">
+        <form>
+          <div class="form-client">
+            <div class="form-client-top col">
+              <label>
+                <p>Faktur</p>
+                <input type="text" name="faktur" id="form-faktur" />
+              </label>
+              <label>
+                <p>Tanggal</p>
+                <input type="date" name="tanggal" id="form-tanggal" />
+              </label>
+            </div>
+            <div class="form-client-bottom">
+              <label>
+                <p>Client</p>
+                <input type="text" name="client" id="form-client" /><button
+                  class="btn-add-client"
+                >
+                  +
+                </button>
+              </label>
+              <label>
+                <p>Alamat</p>
+                <input
+                  type="text"
+                  name="alamat-client"
+                  id="form-alamat-client"
+                />
+              </label>
+              <label>
+                <p>Kota</p>
+                <input type="text" name="kota-client" id="form-kota-client" />
+              </label>
+            </div>
           </div>
-          <div class="formulir form-kanan col">
+
+          <div class="form-barang col">
             <label>
-              Tanggal <input type="date" name"tanggal" id="form-tanggal">
-            </label>
-          </div>
-          <div class="formulir form-bawah col">
-            <label>
-              Nama Barang <input type="text" name"nm_barang"
-              id="form-nm_barang">
+              <p>Nama Barang</p>
+              <input type="text" name="nm_barang" id="form-nm_barang" />
             </label>
             <label>
-              Qty <input type="number" name"jml_barang" id="form-jml_barang">
+              <p>Qty</p>
+              <input type="number" name="jml_barang" id="form-jml_barang" />
             </label>
             <label>
-              Harga Satuan <input type="text" name"hrg_satuan"
-              id="form-hrg_satuan">
+              <p>Harga Satuan</p>
+              <input type="text" name="hrg_satuan" id="form-hrg_satuan" />
             </label>
-            <button>+</button>
+            <button class="btn-add-barang">+</button>
           </div>
         </form>
       </div>

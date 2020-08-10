@@ -1,33 +1,79 @@
+.main {
+  margin-top: 20px;
+}
+
 .main h1 {
   text-align: center;
   color: rgb(66, 66, 168);
 }
 
-.client-form {
-  /* padding: 10px; */
-  border: 1px solid black;
-}
-
-form,
-form .col {
-  flex-direction: column;
-}
-
-.form-kanan {
-  order: 1;
-}
-
-.form-kiri {
-  order: 2;
-}
-.form-bawah {
-  order: 3;
-}
-
-.formulir {
+.input-form {
+  padding: 10px 100px;
   margin-top: 10px;
+  background: rgba(187, 187, 224, 0.6);
+  border-radius: 10px;
+  /* border: 1px solid black; */
 }
 
-.formulir {
+/* .form-client {
   border: 1px solid black;
+} */
+
+form input,
+.btn-add-client,
+.btn-add-barang {
+  padding: 7px 5px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+}
+
+form input:focus {
+  outline: none;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+.form-client-top {
+  justify-content: space-between;
+  /* border: 1px solid salmon; */
+}
+
+.form-client-bottom input {
+  width: 100%;
+}
+
+#form-client {
+  width: 90%;
+}
+
+.btn-add-client {
+  width: 10%;
+}
+
+#form-tanggal {
+  height: 33px;
+}
+
+.form-barang {
+  /* border: 1px solid blue; */
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+#form-nm_barang {
+  width: 450px;
+}
+
+#form-jml_barang {
+  width: 50px;
+}
+
+#form-hrg_satuan {
+  width: 100px;
+}
+
+.btn-add-barang {
+  width: 50px;
+  margin-top: 20px;
 }
