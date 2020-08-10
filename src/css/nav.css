@@ -1,3 +1,10 @@
+/* TYPOGRAFI */
+nav a {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/* LAYOUT */
 header {
   background: #fff;
   padding: 10px 0;

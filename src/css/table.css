@@ -1,0 +1,47 @@
+/* TYPOGRAF */
+.tabel-barang th {
+  color: rgba(66, 66, 168, 0.9);
+  font-weight: 700;
+}
+
+.tabel-beli {
+  margin-top: 20px;
+  /* border: 1px solid black; */
+  padding: 0 100px;
+}
+
+.tabel-barang {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabel-barang tr:nth-child(even) {
+  background: rgba(187, 187, 224, 0.3);
+}
+
+.tabel-barang th,
+.tabel-barang td {
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.tabel-barang th:last-child,
+.tabel-barang td:last-child {
+  border-right: none;
+}
+
+.tabel-barang th {
+  height: 30px;
+}
+
+.tabel-barang td {
+  padding: 4px;
+}
+
+.td-center {
+  text-align: center;
+}
+
+.td-right {
+  text-align: right;
+}
