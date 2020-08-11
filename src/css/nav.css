@@ -1,6 +1,6 @@
 /* TYPOGRAFI */
 nav a {
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 700;
   color: rgba(66, 66, 168, 0.9);
 }
@@ -22,7 +22,7 @@ header .container {
 }
 nav {
   margin: 0 auto;
-  width: 250px;
+  width: 300px;
   /* border: 1px solid red; */
 }
 
