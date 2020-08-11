@@ -5,56 +5,36 @@ label p {
 }
 
 /* LAYOUT */
-.input-form {
-  padding: 20px 50px;
+.main-left {
+  width: 35%;
+  padding: 20px 30px;
   margin-top: 10px;
   background: rgba(187, 187, 224, 0.6);
   border-radius: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
-/* .form-client {
-  border: 1px solid black;
-} */
+#form-client {
+  margin-top: 30px;
+}
 
-form input,
-.btn-add-client,
-.btn-add-barang {
+#form-client input {
+  width: 100%;
   padding: 7px 5px;
   margin-bottom: 10px;
   margin-top: 5px;
+  height: 36px;
   border: 1px solid gainsboro;
   border-radius: 5px;
 }
 
-form input:focus {
+#form-client input:focus {
   outline: none;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
-.form-client-top {
-  justify-content: space-between;
-  /* border: 1px solid salmon; */
-}
-
 .form-client-bottom input {
   width: 100%;
-}
-
-#form-client {
-  width: 90%;
-  border-radius: 5px 0 0 5px;
-  border-right: none;
-}
-
-.btn-add-client {
-  width: 10%;
-  border-radius: 0 5px 5px 0;
-  border-left: none;
-}
-
-#form-tanggal {
-  height: 33px;
 }
 
 .form-barang {

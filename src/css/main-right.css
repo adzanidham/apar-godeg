@@ -4,10 +4,14 @@
   font-weight: 700;
 }
 
+/* LAYOUT */
+.main-right {
+  width: 63%;
+}
 .tabel-beli {
   margin-top: 20px;
   /* border: 1px solid black; */
-  padding: 0 100px;
+  padding: 20px 30px;
 }
 
 .tabel-barang {

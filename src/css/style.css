@@ -1,6 +1,6 @@
 @import "nav.css";
-@import "form.css";
-@import "table.css";
+@import "main-left.css";
+@import "main-right.css";
 
 * {
   margin: 0;
@@ -15,7 +15,7 @@ img {
 .container {
   margin: 0 auto;
   width: 95%;
-  max-width: 900px;
+  max-width: 1150px;
   /* border: 1px solid black; */
 }
 
@@ -42,6 +42,7 @@ header,
 /* MAIN LAYOUT */
 .main {
   margin-top: 20px;
+  justify-content: space-between;
 }
 
 .main h1 {

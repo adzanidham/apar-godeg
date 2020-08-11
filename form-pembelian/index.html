@@ -26,94 +26,97 @@
 
     <div class="container main col">
       <!--  -->
-      <div class="input-form">
-        <h1>FORM DATA PEMBELIAN</h1>
-        <form>
-          <div class="form-client">
-            <div class="form-client-top col">
-              <label>
-                <p>Faktur</p>
-                <input type="text" name="faktur" id="form-faktur" />
-              </label>
-              <label>
-                <p>Tanggal</p>
-                <input type="date" name="tanggal" id="form-tanggal" />
-              </label>
-            </div>
-            <div class="form-client-bottom">
-              <label>
-                <p>Client</p>
-                <input type="text" name="client" id="form-client" /><button
-                  class="btn-add-client"
-                >
-                  add client
-                </button>
-              </label>
-              <label>
-                <p>Alamat</p>
-                <input
-                  type="text"
-                  name="alamat-client"
-                  id="form-alamat-client"
-                  disabled
-                />
-              </label>
-              <label>
-                <p>Kota</p>
-                <input
-                  type="text"
-                  name="kota-client"
-                  id="form-kota-client"
-                  disabled
-                />
-              </label>
-            </div>
-          </div>
-
-          <div class="form-barang col">
+      <div class="main-left">
+        <div class="client">
+          <h1>CLIENT DATA</h1>
+          <form id="form-client">
             <label>
-              <p>Nama Barang</p>
-              <input type="text" name="nm_barang" id="form-nm_barang" />
+              <p>Tanggal</p>
+              <input type="date" name="tanggal" id="form-tanggal" />
             </label>
             <label>
-              <p>Qty</p>
-              <input type="number" name="jml_barang" id="form-jml_barang" />
+              <p>Faktur</p>
+              <input type="text" name="faktur" id="form-faktur" />
             </label>
             <label>
-              <p>Harga Satuan</p>
-              <input type="text" name="hrg_satuan" id="form-hrg_satuan" />
+              <p>Client</p>
+              <input type="text" name="client" id="form-client" />
             </label>
-            <button class="btn-add-barang">+</button>
-          </div>
-        </form>
+            <label>
+              <p>Alamat</p>
+              <input
+                type="text"
+                name="alamat-client"
+                id="form-alamat-client"
+                disabled
+              />
+            </label>
+            <label>
+              <p>Kota</p>
+              <input
+                type="text"
+                name="kota-client"
+                id="form-kota-client"
+                disabled
+              />
+            </label>
+            <label>
+              <p>Phone</p>
+              <input
+                type="text"
+                name="phone-client"
+                id="form-phone-client"
+                disabled
+              />
+            </label>
+          </form>
+        </div>
       </div>
 
-      <div class="tabel-beli" style="overflow-x: auto;">
-        <table class="tabel-barang">
-          <tr>
-            <th>Nama Barang</th>
-            <th>Qty</th>
-            <th>Harga Satuan</th>
-            <th>Jumlah</th>
-            <th>Action</th>
-          </tr>
-          <tr>
-            <td>Aku membeli pohon manga dan jambu</td>
-            <td class="td-center">xx</td>
-            <td class="td-right">xxxx</td>
-            <td class="td-right">xxxx</td>
-            <td class="td-center">edit | hapus</td>
-          </tr>
-          <tr>
-            <td>xxxx</td>
-            <td class="td-center">xxxx</td>
-            <td class="td-right">xxxx</td>
-            <td class="td-right">xxxx</td>
-            <td class="td-center">edit | hapus</td>
-          </tr>
-        </table>
-        <button>Submit</button>
-        <button>Reset</button>
+      <div class="main-right">
+        <!-- <div class="form-barang col">
+          <label>
+            <p>Nama Barang</p>
+            <input type="text" name="nm_barang" id="form-nm_barang" />
+          </label>
+          <label>
+            <p>Qty</p>
+            <input type="number" name="jml_barang" id="form-jml_barang" />
+          </label>
+          <label>
+            <p>Harga Satuan</p>
+            <input type="text" name="hrg_satuan" id="form-hrg_satuan" />
+          </label>
+          <button class="btn-add-barang">+</button>
+        </div> -->
+
+        <div class="tabel-beli" style="overflow-x: auto;">
+          <table class="tabel-barang">
+            <tr>
+              <th>Nama Barang</th>
+              <th>Qty</th>
+              <th>Harga Satuan</th>
+              <th>Jumlah</th>
+              <th>Action</th>
+            </tr>
+            <tr>
+              <td>Aku membeli pohon manga dan jambu</td>
+              <td class="td-center">xx</td>
+              <td class="td-right">xxxx</td>
+              <td class="td-right">xxxx</td>
+              <td class="td-center">edit | hapus</td>
+            </tr>
+            <tr>
+              <td>xxxx</td>
+              <td class="td-center">xxxx</td>
+              <td class="td-right">xxxx</td>
+              <td class="td-right">xxxx</td>
+              <td class="td-center">edit | hapus</td>
+            </tr>
+          </table>
+          <button>Submit</button>
+          <button>Reset</button>
+        </div>
       </div>
     </div>
 
