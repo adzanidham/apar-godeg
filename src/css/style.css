@@ -41,11 +41,7 @@ header,
 
 /* MAIN LAYOUT */
 .main {
-  margin-top: 20px;
+  margin-top: 30px;
   justify-content: space-between;
-}
-
-.main h1 {
-  text-align: center;
-  color: rgba(66, 66, 168, 0.8);
+  /* border: 1px solid green; */
 }
