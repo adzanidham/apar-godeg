@@ -1,18 +1,19 @@
 /* TYPOGRAF */
+.main-right h1 {
+  text-align: center;
+  color: rgba(66, 66, 168, 0.8);
+}
 .tabel-barang th {
   color: rgba(66, 66, 168, 0.9);
   font-weight: 700;
 }
 
-.main-right h1 {
-  text-align: center;
-  color: rgba(66, 66, 168, 0.8);
-}
-
 /* LAYOUT */
 .main-right {
-  width: 63%;
+  width: 64%;
   padding: 20px 30px;
+  background: rgba(187, 187, 224, 0.6);
+  border-radius: 10px;
   /* border: 1px solid black; */
 }
 
@@ -66,19 +67,22 @@
   width: 100%;
 }
 
-.tabel-barang tr:nth-child(even) {
-  background: rgba(187, 187, 224, 0.3);
+.tabel-barang tr:nth-child(1) {
+  border-bottom: 1px solid rgba(66, 66, 168, 0.4);
 }
 
 .tabel-barang th,
 .tabel-barang td {
-  border-bottom: 1px solid #ddd;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid rgba(66, 66, 168, 0.4);
 }
 
 .tabel-barang th:last-child,
 .tabel-barang td:last-child {
   border-right: none;
+}
+
+.tabel-barang tr:nth-child(even) {
+  background: rgba(187, 187, 224, 0.4);
 }
 
 .tabel-barang th {
