@@ -16,10 +16,6 @@ header {
   padding: 10px 0;
 }
 
-header .container {
-  /* border: 1px solid black; */
-  /* flex-direction: column; */
-}
 nav {
   margin: 0 auto;
   width: 300px;
@@ -29,10 +25,6 @@ nav {
 nav ul {
   list-style-type: none;
   justify-content: space-around;
-}
-
-nav li {
-  /* border: 1px solid blue; */
 }
 
 nav a {
