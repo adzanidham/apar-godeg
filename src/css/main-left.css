@@ -4,18 +4,22 @@ label p {
   font-weight: 700;
 }
 
+.main-left h1 {
+  text-align: center;
+  color: rgba(66, 66, 168, 0.8);
+}
+
 /* LAYOUT */
 .main-left {
   width: 35%;
   padding: 20px 30px;
-  margin-top: 10px;
   background: rgba(187, 187, 224, 0.6);
   border-radius: 10px;
   /* border: 1px solid black; */
 }
 
 #form-client {
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 #form-client input {
@@ -31,31 +35,4 @@ label p {
 #form-client input:focus {
   outline: none;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
-}
-
-.form-client-bottom input {
-  width: 100%;
-}
-
-.form-barang {
-  /* border: 1px solid blue; */
-  margin-top: 20px;
-  justify-content: space-between;
-}
-
-#form-nm_barang {
-  width: 450px;
-}
-
-#form-jml_barang {
-  width: 50px;
-}
-
-#form-hrg_satuan {
-  width: 100px;
-}
-
-.btn-add-barang {
-  width: 50px;
-  margin-top: 20px;
 }
