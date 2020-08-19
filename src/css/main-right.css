@@ -25,6 +25,7 @@
 
 #form-barang input,
 .btn-add-barang {
+  cursor: pointer;
   padding: 7px 5px;
   margin-bottom: 10px;
   margin-top: 5px;
@@ -34,7 +35,8 @@
 }
 
 #form-barang input:focus,
-.btn-add-barang:focus {
+.btn-add-barang:focus,
+.btn-submit:focus {
   outline: none;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
@@ -99,4 +101,14 @@
 
 .td-right {
   text-align: right;
+}
+
+.btn-submit {
+  cursor: pointer;
+  padding: 7px 35px;
+  margin-top: 15px;
+  float: right;
+  height: 36px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
 }
