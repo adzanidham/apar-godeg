@@ -23,20 +23,23 @@
   justify-content: space-between;
 }
 
-#form-barang input,
-.btn-add-barang {
-  cursor: pointer;
+#form-barang input {
   padding: 7px 5px;
-  margin-bottom: 10px;
   margin-top: 5px;
   height: 36px;
   border: 1px solid gainsboro;
   border-radius: 5px;
 }
 
+.btn {
+  cursor: pointer;
+  height: 36px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+}
+
 #form-barang input:focus,
-.btn-add-barang:focus,
-.btn-submit:focus {
+.btn:focus {
   outline: none;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
@@ -92,7 +95,7 @@
 }
 
 .tabel-barang td {
-  padding: 4px;
+  padding: 5px;
 }
 
 .td-center {
@@ -103,9 +106,15 @@
   text-align: right;
 }
 
+.btn-action {
+  border: none;
+  height: 25px;
+  width: 50px;
+}
+
 .btn-submit {
   cursor: pointer;
-  padding: 7px 35px;
+  padding: 7px 45px;
   margin-top: 15px;
   float: right;
   height: 36px;
