@@ -26,36 +26,61 @@
           <form id="form-client">
             <label><p>Jual Sebagai</p></label>
             <div class="switch-seller">
-              <input type="radio" name="seller" id="bjt" checked />
+              <input
+                type="radio"
+                name="seller"
+                id="bjt"
+                value="CV. BINA JAYA TEKNIKA"
+              />
               <label for="bjt">Bina Jaya Teknika</label>
-              <input type="radio" name="seller" id="adimas" />
+              <input
+                type="radio"
+                name="seller"
+                id="adimas"
+                value="CV. ADIMAS PUTRA"
+              />
               <label for="adimas">Adimas Putra</label>
             </div>
             <div class="form-flex col">
               <label>
                 <p>Tanggal</p>
-                <input type="date" name="tanggal" id="form-tanggal" />
+                <input type="date" name="tanggal" id="form-tanggal" required />
               </label>
               <label>
                 <p>Faktur</p>
-                <input type="text" name="faktur" id="form-faktur" />
+                <input type="text" name="faktur" id="form-faktur" required />
               </label>
             </div>
             <label>
-              <p>Konsumen</p>
-              <input type="text" name="client" id="form-client" />
+              <p>Nama Client</p>
+              <input type="text" name="client" id="form-nm_client" required />
             </label>
             <label>
               <p>Alamat</p>
-              <input type="text" name="alamat-client" id="form-alamat-client" />
+              <input
+                type="text"
+                name="alamat-client"
+                id="form-alamat-client"
+                required
+              />
             </label>
             <label>
               <p>Kota</p>
-              <input type="text" name="kota-client" id="form-kota-client" />
+              <input
+                type="text"
+                name="kota-client"
+                id="form-kota-client"
+                required
+              />
             </label>
             <label>
               <p>Telepon</p>
-              <input type="text" name="phone-client" id="form-phone-client" />
+              <input
+                type="text"
+                name="phone-client"
+                id="form-phone-client"
+                required
+              />
             </label>
           </form>
         </div>

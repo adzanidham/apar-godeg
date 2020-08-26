@@ -1,9 +1,54 @@
+const pembelian = {
+  date: '',
+  faktur: '',
+
+}
+
 const items = []
+
+// Set Faktur By Date Input
+const formDate = document.querySelector('#form-tanggal')
+formDate.addEventListener('change', event => {
+  const dateArr = formDate.value
+  const [y, m, d] = dateArr.split('-')
+
+  const faktur = `FKTR${y}${m}${d}`
+  document.querySelector('#form-faktur').value = faktur
+})
+
+
+// SELL AS
+let sellAs = ''
+const bjt = document.querySelector('#bjt')
+const adimas = document.querySelector('#adimas')
+
+adimas.addEventListener('click', event => {
+  adimas.checked = true
+  sellAs = adimas.value
+  console.log(sellAs)
+})
+
+bjt.addEventListener('click', event => {
+  bjt.checked = true
+  sellAs = bjt.value
+  console.log(sellAs)
+})
+
+// if (bjt.checked) {
+//   sellAs = bjt.value
+//   console.log(sellAs)
+// }
+// if (adimas.checked) {
+//   sellAs = adimas.value
+//   console.log(sellAs)
+// }
+// const seller = document.querySelectorAll('[name=seller]')
+
 
 function showListBarang(listBarang) {
   const newRow = document.createElement('tr')
   newRow.innerHTML = `
-    <td class="td-center">${listBarang.nmBarang}</td>
+    <td>${listBarang.nmBarang}</td>
     <td class="td-center">${listBarang.jmlBarang}</td>
     <td class="td-right">${listBarang.hrgSatuan}</td>
     <td class="td-right">${listBarang.jmlBarang * listBarang.hrgSatuan}</td>
@@ -14,19 +59,11 @@ function showListBarang(listBarang) {
   document.querySelector('tBody').appendChild(newRow)
 
   const btnDelRow = document.querySelectorAll('.btn-del')
-  // console.log(btnDelRow)
-  // btnDelRow[0].addEventListener('click', event => { alert('tombol1') })
   btnDelRow.forEach((btn, i) => {
     btn.addEventListener('click', event => {
-      // alert(`Btn ke-${i}`)
-      // console.log(btn.parentElement.parentElement.children)
       const element = btn.parentElement.parentElement
       element.remove()
       items.splice(i, 1)
-      // console.log(items)
-
-      // console.log(element)
-      // console.log(element.parentElement)
     })
   })
 
@@ -45,14 +82,7 @@ btnAddBarang.addEventListener('click', event => {
   items.push(listBarang)
 
   document.querySelector('#form-barang').reset()
-  // console.log(listBarang)
-  // console.log(items)
-  // console.log(listBarang.nmBarang)
-  // console.log(listBarang.jmlBarang)
-  // console.log(listBarang.hrgSatuan)
-  // console.log(listBarang.jumlah)
 
   showListBarang(listBarang)
-  console.log(items)
 })
 
