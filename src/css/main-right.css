@@ -72,7 +72,8 @@
   width: 100%;
 }
 
-.tabel-barang tr:nth-child(1) {
+.tabel-barang thead tr:nth-child(1),
+.tabel-barang tbody tr:last-child {
   border-bottom: 1px solid rgba(66, 66, 168, 0.4);
 }
 
@@ -86,7 +87,7 @@
   border-right: none;
 }
 
-.tabel-barang tr:nth-child(even) {
+.tabel-barang tbody tr:nth-child(odd) {
   background: rgba(187, 187, 224, 0.4);
 }
 
@@ -114,10 +115,10 @@
 
 .btn-submit {
   cursor: pointer;
-  padding: 7px 45px;
-  margin-top: 15px;
-  float: right;
-  height: 36px;
+  padding: 5px 25px;
+  margin-top: 10px;
+  /* float: right; */
+  height: 30px;
   border: 1px solid gainsboro;
   border-radius: 5px;
 }

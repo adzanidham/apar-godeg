@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Data Pembeli | Sistem Informasi Penjualan APAR</title>
     <link rel="stylesheet" href="../src/css/style.css" />
-    <link rel="stylesheet" href="../src/font-awesome/css/all.css" />
   </head>
 
   <body>
@@ -65,64 +64,61 @@
       <div class="main-right">
         <div class="barang">
           <h1>FORM BARANG</h1>
-          <form id="form-barang" class="col">
+          <form id="form-barang" class="col" autocomplete="off">
             <label>
               <p>Nama Barang</p>
-              <input type="text" name="nm_barang" id="form-nm_barang" />
+              <input
+                type="text"
+                name="nm_barang"
+                id="form-nm_barang"
+                required
+              />
             </label>
             <label>
               <p>Qty</p>
-              <input type="number" name="jml_barang" id="form-jml_barang" />
+              <input
+                type="number"
+                min="1"
+                name="jml_barang"
+                id="form-jml_barang"
+                required
+              />
             </label>
             <label>
               <p>Harga Satuan</p>
-              <input type="text" name="hrg_satuan" id="form-hrg_satuan" />
+              <input
+                type="text"
+                name="hrg_satuan"
+                id="form-hrg_satuan"
+                required
+              />
             </label>
             <button class="btn btn-add-barang">+</button>
           </form>
         </div>
 
-        <div class="tabel-beli" style="overflow-x: auto;">
+        <div class="tabel-beli" style="overflow-x: auto">
           <table class="tabel-barang">
-            <tr>
-              <th>Nama Barang</th>
-              <th>Qty</th>
-              <th>Harga Satuan</th>
-              <th>Jumlah</th>
-              <th>Action</th>
-            </tr>
-            <tr>
-              <td>Aku membeli pohon manga dan jambu</td>
-              <td class="td-center">xx</td>
-              <td class="td-right">xxxx</td>
-              <td class="td-right">xxxx</td>
-              <td class="td-center">
-                <button class="btn btn-action btn-edit">edit</button>
-                <button class="btn btn-action btn-del">hapus</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xxxx</td>
-              <td class="td-center">xxxx</td>
-              <td class="td-right">xxxx</td>
-              <td class="td-right">xxxx</td>
-              <td class="td-center">
-                <button class="btn btn-action btn-edit">edit</button>
-                <button class="btn btn-action btn-del">hapus</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Aku membeli pohon manga dan jambu</td>
-              <td class="td-center">xx</td>
-              <td class="td-right">xxxx</td>
-              <td class="td-right">xxxx</td>
-              <td class="td-center">
-                <button class="btn btn-action btn-edit">edit</button>
-                <button class="btn btn-action btn-del">hapus</button>
-              </td>
-            </tr>
+            <thead>
+              <tr>
+                <th>Nama Barang</th>
+                <th>Qty</th>
+                <th>Harga Satuan</th>
+                <th>Jumlah</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3" class="td-right">Total</td>
+                <td class="td-right">XX</td>
+                <td class="td-center">
+                  <button class="btn btn-submit">Submit</button>
+                </td>
+              </tr>
+            </tfoot>
           </table>
-          <button class="btn btn-submit">Submit</button>
         </div>
       </div>
     </div>
@@ -132,5 +128,7 @@
         <h3>2020 by Jet</h3>
       </div>
     </footer>
+
+    <script src="../src/js/script.js"></script>
   </body>
 </html>
