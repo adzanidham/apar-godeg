@@ -21,16 +21,46 @@ formDate.addEventListener('change', event => {
 let sellAs = ''
 const bjt = document.querySelector('#bjt')
 const adimas = document.querySelector('#adimas')
-
+const tfoot = document.querySelector('tfoot')
 adimas.addEventListener('click', event => {
   adimas.checked = true
   sellAs = adimas.value
+
+  // set total table for adimas
+  tfoot.innerHTML = `
+    <tr>
+      <td colspan="3" class="td-right">Total</td>
+      <td class="td-right">XX</td>
+      <td class="td-center" rowspan="3">
+        <button class="btn btn-submit">Submit</button>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" class="td-right">PPN 10%</td>
+      <td class="td-right">XX</td>
+    </tr>
+    <tr>
+      <td colspan="3" class="td-right">Total Seletah Pajak</td>
+      <td class="td-right">XX</td>
+    </tr>
+  `
   console.log(sellAs)
 })
 
 bjt.addEventListener('click', event => {
   bjt.checked = true
   sellAs = bjt.value
+
+  // set total table for adimas
+  tfoot.innerHTML = `
+    <tr>
+      <td colspan="3" class="td-right">Total</td>
+      <td class="td-right">XX</td>
+      <td class="td-center">
+        <button class="btn btn-submit">Submit</button>
+      </td>
+    </tr>
+  `
   console.log(sellAs)
 })
 
