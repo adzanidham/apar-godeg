@@ -1,10 +1,13 @@
 const pembelian = {
+  sellAs: '',
   date: '',
   faktur: '',
-
+  nmClient: '',
+  alamat: '',
+  kota: '',
+  telepon: '',
+  items: []
 }
-
-const items = []
 
 // Set Faktur By Date Input
 const formDate = document.querySelector('#form-tanggal')
@@ -32,7 +35,7 @@ adimas.addEventListener('click', event => {
       <td colspan="3" class="td-right">Total</td>
       <td class="td-right">XX</td>
       <td class="td-center" rowspan="3">
-        <button class="btn btn-submit">Submit</button>
+        <button class="btn btn-submit">Cetak Faktur</button>
       </td>
     </tr>
     <tr>
@@ -44,9 +47,9 @@ adimas.addEventListener('click', event => {
       <td class="td-right">XX</td>
     </tr>
   `
-  console.log(sellAs)
 })
 
+// set total table for binaJayaTeknika
 bjt.addEventListener('click', event => {
   bjt.checked = true
   sellAs = bjt.value
@@ -57,62 +60,50 @@ bjt.addEventListener('click', event => {
       <td colspan="3" class="td-right">Total</td>
       <td class="td-right">XX</td>
       <td class="td-center">
-        <button class="btn btn-submit">Submit</button>
+        <button class="btn btn-submit">Cetak Faktur</button>
       </td>
     </tr>
   `
-  console.log(sellAs)
 })
-
-// if (bjt.checked) {
-//   sellAs = bjt.value
-//   console.log(sellAs)
-// }
-// if (adimas.checked) {
-//   sellAs = adimas.value
-//   console.log(sellAs)
-// }
-// const seller = document.querySelectorAll('[name=seller]')
-
 
 function showListBarang(listBarang) {
   const newRow = document.createElement('tr')
+  newRow.setAttribute('data-key', listBarang.idBarang)
   newRow.innerHTML = `
     <td>${listBarang.nmBarang}</td>
     <td class="td-center">${listBarang.jmlBarang}</td>
     <td class="td-right">${listBarang.hrgSatuan}</td>
     <td class="td-right">${listBarang.jmlBarang * listBarang.hrgSatuan}</td>
     <td class="td-center">
-      <button class="btn btn-action btn-del">hapus</button>
+      <button class="btn btn-action btn-del" onclick="hapusItem()">hapus</button>
     </td>
   `
   document.querySelector('tBody').appendChild(newRow)
-
-  const btnDelRow = document.querySelectorAll('.btn-del')
-  btnDelRow.forEach((btn, i) => {
-    btn.addEventListener('click', event => {
-      const element = btn.parentElement.parentElement
-      element.remove()
-      items.splice(i, 1)
-    })
-  })
-
 }
 
 const btnAddBarang = document.querySelector('.btn-add-barang')
 btnAddBarang.addEventListener('click', event => {
   event.preventDefault()
   const listBarang = {}
-  listBarang['idBarang'] = Date.now()
+  listBarang['idBarang'] = String(Date.now())
   listBarang['nmBarang'] = document.getElementById('form-nm_barang').value.trim()
   listBarang['jmlBarang'] = parseInt(document.getElementById('form-jml_barang').value.trim())
   listBarang['hrgSatuan'] = parseInt(document.getElementById('form-hrg_satuan').value.trim())
-  listBarang['jumlah'] = listBarang.jmlBarang * listBarang.hrgSatuan
 
-  items.push(listBarang)
+  pembelian.items.push(listBarang)
 
   document.querySelector('#form-barang').reset()
 
   showListBarang(listBarang)
 })
+
+function hapusItem() {
+  const parentTarget = document.querySelector('tbody')
+  const targetTr = event.target.parentElement.parentElement
+  const targetId = targetTr.getAttribute('data-key')
+  parentTarget.removeChild(targetTr)
+
+  // new items after remove
+  pembelian.items = pembelian.items.filter((item) => item.idBarang !== targetId)
+}
 
