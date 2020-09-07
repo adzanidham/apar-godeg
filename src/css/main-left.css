@@ -87,6 +87,11 @@ label p {
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
-.form-flex {
+#form-client .col {
   justify-content: space-between;
+}
+
+label[for="tanggal"],
+label[for="faktur"] {
+  width: 49%;
 }
