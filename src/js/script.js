@@ -21,16 +21,23 @@ formDate.addEventListener('change', event => {
 
 
 // SELL AS
-let sellAs = ''
-const bjt = document.querySelector('#bjt')
-const adimas = document.querySelector('#adimas')
-const tfoot = document.querySelector('tfoot')
-adimas.addEventListener('click', event => {
-  adimas.checked = true
-  sellAs = adimas.value
+function setTotalForm(sellAs) {
+  if (sellAs === 'CV. BINA JAYA TEKNIKA') {
+    document.querySelector('tfoot').innerHTML = `
+    <tr>
+      <td colspan="3" class="td-right">Total</td>
+      <td class="td-right">XX</td>
+      <td class="td-center">
+        <button class="btn btn-submit">Cetak Faktur</button>
+      </td>
+    </tr>
+    `
+    pembelian.sellAs = sellAs
+    console.log(pembelian)
+  }
 
-  // set total table for adimas
-  tfoot.innerHTML = `
+  if (sellAs === 'CV. ADIMAS PUTRA') {
+    document.querySelector('tfoot').innerHTML = `
     <tr>
       <td colspan="3" class="td-right">Total</td>
       <td class="td-right">XX</td>
@@ -46,24 +53,23 @@ adimas.addEventListener('click', event => {
       <td colspan="3" class="td-right">Total Seletah Pajak</td>
       <td class="td-right">XX</td>
     </tr>
-  `
+    `
+    pembelian.sellAs = sellAs
+    console.log(pembelian)
+  }
+}
+
+
+const bjt = document.querySelector('#bjt')
+bjt.addEventListener('click', event => {
+  event.target.checked = true
+  setTotalForm(event.target.value)
 })
 
-// set total table for binaJayaTeknika
-bjt.addEventListener('click', event => {
-  bjt.checked = true
-  sellAs = bjt.value
-
-  // set total table for adimas
-  tfoot.innerHTML = `
-    <tr>
-      <td colspan="3" class="td-right">Total</td>
-      <td class="td-right">XX</td>
-      <td class="td-center">
-        <button class="btn btn-submit">Cetak Faktur</button>
-      </td>
-    </tr>
-  `
+const adimas = document.querySelector('#adimas')
+adimas.addEventListener('click', event => {
+  event.target.checked = true
+  setTotalForm(event.target.value)
 })
 
 function showListBarang(listBarang) {
